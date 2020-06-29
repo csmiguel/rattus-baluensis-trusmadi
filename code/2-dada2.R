@@ -128,4 +128,8 @@ genotypes <-
     }
   }
     }) %>%
-  {do.call(what = cbind, args = .)}
+  {do.call(what = cbind, args = .)} %>%
+  setNames(loci)
+genotypes[is.na(genotypes)] <- "00"
+
+saveRDS(genotypes, file = "data/intermediate/genotypes.rds")

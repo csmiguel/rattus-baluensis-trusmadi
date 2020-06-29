@@ -1,0 +1,9 @@
+###.............................................................................
+# (c) Miguel Camacho Sánchez
+# miguelcamachosanchez@gmail.com // miguelcamachosanchez.weebly.com
+# https://scholar.google.co.uk/citations?user=1M02-S4AAAAJ&hl=en
+# June 2020
+###.............................................................................
+#GOAL: dada2
+#PROJECT: amplicon-genotyping
+###.............................................................................
