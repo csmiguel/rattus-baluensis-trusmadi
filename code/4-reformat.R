@@ -9,7 +9,8 @@
 ###.............................................................................
 library(adegenet)
 library(hierfstat)
-
+#load reformatting options
+source("code/parameters/parameters.r")
 #read genotypes
 genotypes <-
   readRDS("data/intermediate/genotypes-filtered.rds") %>%
