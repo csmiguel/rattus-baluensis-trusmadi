@@ -7,3 +7,4 @@
 #GOAL: dada2
 #PROJECT: amplicon-genotyping
 ###.............................................................................
+library(asserthat)

@@ -19,9 +19,9 @@ source("code/functions/remove-spurious-ASVs.r")
 all_samples <- readLines("data/intermediate/samples-list")
 #loci
 loci <- readLines("data/raw/loci")
-loci_set <- loci[1:2]
+loci_set <- loci
 #for all loci
-genotypes <-
+genotyping <-
   loci_set %>%
   lapply(function(locus) {
     fnFs <- sort(list.files("data/intermediate",
@@ -114,15 +114,17 @@ genotypes <-
     }
   }
     }) %>%
-    setNames(loci_set)
-#create data frame with genotypes
+    setNames(loci_set) %>%
+    #remove NULL loci; ie those that have not been genotyped
+    {.[!(.) %>% sapply(is.null)]}
+    #create data frame with genotypes
 genotypes <-
   genotyping %>%
     sapply(function(x){
       x$genotypes
       }) %>%
       do.call(what = cbind) %>%
-      {row.names(.) <- sample.names; .} %>%
+      {row.names(.) <- all_samples; .} %>%
       as.data.frame() %>%
       setNames(names(genotyping))
 #create data frame with allele sequences
@@ -137,7 +139,7 @@ al_seqs <-
     dplyr::arrange(locus, allele)
 
 #write alleles to fasta
-write.fasta(sequences = as.list(al_seqs$sequence),
+seqinr::write.fasta(sequences = as.list(al_seqs$sequence),
             names = paste(al_seqs$locus, al_seqs$allele, sep = "_"),
             file.out = "output/alleles.fasta")
 
