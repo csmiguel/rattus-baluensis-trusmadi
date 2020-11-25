@@ -1,0 +1,6 @@
+2020-11-25 08:02:20 
+LOG on src/0-checks.R
+ No package(s) need to be installed manually
+ data/raw/primers.csv exists and seems to have data formatted correctly
+ fastq files seem to be present in data/raw
+ fastq files seem to have a file data/raw/id-match.txt for renaming

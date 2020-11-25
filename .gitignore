@@ -2,3 +2,4 @@
 /etc
 /test
 *DS_Store
+data/raw/*fastq.gz
