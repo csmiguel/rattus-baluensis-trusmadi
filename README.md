@@ -44,9 +44,9 @@ All names of fastq files used should meet a given format. Please, follow instruc
 
 Scripts should be run in order from 0 (`src/0-checks.R`)to 5 (`code/05-fasfda.R`) in the Terminal/Console, or inside R if applies, using relative paths.
 
-`src/0-checks.R` confirms you have all the installed dependencies and creates input files with primers for cutadapt.
+`src/0-checks.R` confirms you have all the installed R packages and creates input files with primers for cutadapt.
 
-`src/1-trim-reads.sh` remanes fastq to meet input format and runs cutadapt. It demultiplexes loci from R1 and R2 files into separate fastq files in `data/intermediate`. Log from cutadapt can be found in `output/cutadapt.txt`.
+`src/1-trim-reads.sh` renames fastq to meet input format and runs cutadapt. It demultiplexes loci from R1 and R2 files into separate fastq files in `data/intermediate`. Log from cutadapt can be found in `output/log-cutadapt.txt`.
 
 `src/2-genotyping.R` does the genotyping for each locus across all samples. Reads with ambiguities are removed. If reads do not overlap (i.e. the amplicon is longer than  ~R1 + R2), then they are merged by adding 10 N in between R1 and R2 reads. Final genotype calls are given using thresholds on minimium coverage and allele balance `src/parameters/parameters.r`.
 heterozygous (AB): two alleles found passing tresholds in `src/parameters/parameters.r`.

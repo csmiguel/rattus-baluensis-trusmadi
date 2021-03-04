@@ -1,5 +1,6 @@
 /data/intermediate
 /etc
 /test
+/output
 *DS_Store
 data/raw/*fastq.gz
