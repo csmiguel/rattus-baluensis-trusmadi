@@ -7,3 +7,4 @@
 !/amplisas-analysis/results_amplisas/results.xlsx
 *DS_Store
 data/raw/*fastq.gz
+.Rproj.user

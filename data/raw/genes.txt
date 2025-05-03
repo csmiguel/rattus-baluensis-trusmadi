@@ -1,0 +1,27 @@
+short;gene;intron;note
+abcg8;ABCG8;10;ATP-binding cassette sub-family G member 8
+alkbh7;ALKBH7;3;Alkylated repair protein alkB homolog 7 precursor
+apeh17;APEH;17;Acylamino-acid-releasing enzyme
+cd27;CD27;5;Tumor necrosis factor receptor superfamily member 7 precursor
+chrna9;CHRNA9;1;Neuronal acetylcholine receptor protein sub alpha-9 precursor
+dhrs3;DHRS3;3;Short-chain dehydrogenase/reductase 3
+fancg;FANCG;9;Fanconi anemia group G protein
+fn3krp;FN3KRP;5;Ketosamine-3-kinase
+gadd45g;GADD45G;1;GADD45 gamma protein
+il34;IL34;3;Interleukin-34 Precursor
+irf5;IRF5;7;Interferon regulatory factor 5
+klc2;KLC2;10;Kinesin light chain 2
+mmp9;MMP9;10;Matrix metalloproteinase-9 precursor
+ms4a2;MS4A2;5;High affinity immunoglobulin epsilon receptor subunit beta
+mycbpap;MYCBPAP;11;Myc-binding protein-associated protein
+nfkbia;NFKBIA;5;NF-kappa-B inhibitor alpha
+npr2;NPR2;10;Atrial natriuretic peptide receptor B precursor
+p2rx1;P2RX1;3;P2X purinoceptor 1
+pipox;PIPOX;4;Peroxisomal sarcosine oxidase
+ptgs2;PTGS2;3;Prostaglandin G/H synthase 2 precursor
+rabac1;RABAC1;1;Prenylated Rab acceptor protein 1
+rgd735029;KIAA0141;5;NA
+rogdi;ROGDI;6;leucine zipper domain protein
+ssfa2;SSFA2;13;Sperm-specific antigen 2
+tmem87a;TMEM87A;16;transmembrane protein 87A
+usp20;USP20;9;Ubiquitin carboxyl-terminal hydrolase 20

@@ -1,1 +1,0 @@
-data/raw/data/raw/reference-alleles.fasta contain allele a from Rattus baluensis from Camacho-Sanchez et al. 2018, except for 3 markers which were not amplified in that study ("apeh14" "sfrs5"  "gabrp"). For these markers, I added the sequences from Rattus norvegicus 
