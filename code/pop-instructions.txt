@@ -1,0 +1,23 @@
+# instructions to 
+
+# Export NEX with alignments.
+run r code to export nexus
+then:
+cd data/intermediate/popabc
+../../../code/popABC/popabc
+navigate to 4 6 
+code/popABC/popabc
+
+remove alkbh.len p2rx1.len
+cat *len > 18_loci.len
+
+ejeccute code to clean len file
+
+paste rbal.sst to data/intermediate/popabc/
+
+run by hand popabc
+
+then rejection
+# dat trg output_file no_parameters no_statistics rejection_proportion
+../../../../code/popABC/rejection run1.dat run1.trg run1 16 39 0.01
+

@@ -65,6 +65,7 @@ m1 <- lm(mlh ~ elevation * pop, data = mlh2)
 m2_noInt <- lm(mlh ~ elevation + pop, data = mlh2)
 m3_only_pop <- lm(mlh ~ pop, data = mlh2)
 m4_only_elev <- lm(mlh ~ elevation, data = mlh2)
+m5 <- lm(mlh ~ pop + elevation:pop, data = mlh2)
 
 sink("output/mlh_model.txt")
 summary(m1)
