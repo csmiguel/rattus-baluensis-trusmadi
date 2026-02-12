@@ -2,6 +2,7 @@
 /etc
 /test
 /output
+/map
 /amplisas-analysis/results_amplicheck
 /amplisas-analysis/results_amplisas/*
 !/amplisas-analysis/results_amplisas/results.xlsx
